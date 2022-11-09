@@ -206,19 +206,20 @@
     grid-template-columns: initial;
   }
   .container .sidebar .card-front {
-    width: 20rem;
+    width: min(100%, 20rem);
     height: 10rem;
     font-size: 14px;
-    top: 12%;
+    top: 6%;
+    left: 2%;
   }
   .container .sidebar .card-front .middle-front {
     font-size: 20px;
   }
   .container .sidebar .card-back {
-    width: 20rem;
+    width: min(100%, 20rem);
     height: 10rem;
     left: initial;
-    right: 9%;
+    right: 2%;
     top: 55%;
   }
   .container .main form {
