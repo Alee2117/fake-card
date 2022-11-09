@@ -167,10 +167,15 @@
   }
   .container .sidebar .card-front {
     left: 8%;
+    top: 7%;
   }
   .container .sidebar .card-back {
     left: initial;
     right: 8%;
+    top: 27%;
+  }
+  .container .main form {
+    margin-top: 25px;
   }
 }
 @media only screen and (max-width: 608px) {
@@ -206,7 +211,7 @@
     grid-template-columns: initial;
   }
   .container .sidebar .card-front {
-    width: min(100%, 20rem);
+    width: min(100%, 18rem);
     height: 10rem;
     font-size: 14px;
     top: 6%;
@@ -216,7 +221,7 @@
     font-size: 20px;
   }
   .container .sidebar .card-back {
-    width: min(100%, 20rem);
+    width: min(100%, 18rem);
     height: 10rem;
     left: initial;
     right: 2%;
