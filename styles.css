@@ -257,10 +257,7 @@
     font-size: 0.7em;
   }
   .container .main form {
-    max-width: 94%;
-    min-width: -webkit-fit-content;
-    min-width: -moz-fit-content;
-    min-width: fit-content;
+    max-width: 91%;
     margin-top: 22px;
   }
   .container .main form .card-finer-details .month-date input {

@@ -17,6 +17,12 @@ let cardNumber = document.querySelector(".middle-front") as HTMLDivElement
 nameInput.addEventListener("input", () => {
     nameInput.value = nameInput.value.replace(/[^a-zA-Z ]/g, "")
   nameCard.textContent = nameInput.value
+  console.log(nameInput.value.length)
+  if (nameInput.value.length > 30) {
+    nameCard.style.fontSize = "12px";
+} else {
+    nameCard.style.fontSize = "inherit"
+}
 })
 
 cardNumberInput.addEventListener("input", () => {
