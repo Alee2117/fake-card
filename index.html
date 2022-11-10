@@ -12,7 +12,7 @@
       <div class="sidebar">
         <div class="card-front">
           <img class="icon" src="./assets/icon.svg" alt="" />
-          <div class="middle-front">#### #### #### ####</div>
+          <div class="middle-front">0000 0000 0000 0000</div>
           <div class="bottom-front">
             <div class="card-name">Cardholder Name</div>
             <div class="card-date">
@@ -31,7 +31,7 @@
         <form>
           <fieldset class="card-details">
             <label for="name">CARDHOLDER NAME</label>
-            <input
+            <input required
               placeholder="e.g. Jane Appleseed"
               name="name"
               id="name"
@@ -39,7 +39,7 @@
             />
 
             <label for="card-num">CARD NUMBER</label>
-            <input
+            <input required
               placeholder="e.g. 1234 5678 9120 0000"
               name="card-num"
               id="card-num"
@@ -51,13 +51,13 @@
             <div class="month-date">
               <label for="date">Exp. Date (MM/YY)</label>
               <div>
-                <input max="12" placeholder="MM" name="month" id="month" type="number" />
-                <input placeholder="YY" name="year" id="year" type="number" />
+                <input required max="12" placeholder="MM" name="month" id="month" type="number" />
+                <input required placeholder="YY" name="year" id="year" type="number" />
               </div>
             </div>
             <div class="cvc">
               <label for="cvc">CVC</label>
-              <input placeholder="e.g. 123" name="cvc" id="cvc" type="number" />
+              <input required placeholder="e.g. 123" name="cvc" id="cvc" type="number" />
             </div>
           </fieldset>
           <button type="submit">Confirm</button>

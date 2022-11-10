@@ -11,7 +11,7 @@
   width: 100%;
   min-height: 100vh;
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 1.4fr 4fr;
 }
 .container h1 {
   color: red;
@@ -28,51 +28,62 @@
   background-size: cover;
   background-position: center;
   border-radius: 7px;
-  width: 27rem;
-  height: 15rem;
+  width: 34rem;
+  height: 19rem;
   position: absolute;
-  left: 40%;
-  top: 10%;
+  right: -30%;
+  top: 13%;
   color: white;
-  font-size: 18px;
-  padding: 20px;
+  font-size: 1em;
+  padding: 2em;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   z-index: 1;
+  transition: all 1.5s ease;
+  box-shadow: 8px 8px 20px -1px rgba(0, 0, 0, 0.41);
 }
 .container .sidebar .card-front .icon {
-  max-width: 50px;
+  max-width: 70px;
 }
 .container .sidebar .card-front .middle-front {
-  font-size: 30px;
-  text-align: center;
+  font-size: 2.2em;
+  letter-spacing: 3px;
 }
 .container .sidebar .card-front .bottom-front {
   display: flex;
   justify-content: space-between;
+  font-size: 1.2em;
 }
 .container .sidebar .card-front .bottom-front .card-name {
-  letter-spacing: 1px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.container .sidebar .card-front .bottom-front .card-date {
+  letter-spacing: 2px;
 }
 .container .sidebar .card-back {
   background-image: url(./assets/bg-card-back.png);
   background-size: cover;
   background-position: center;
   border-radius: 7px;
-  width: 27rem;
-  height: 15rem;
+  width: 34rem;
+  height: 19rem;
   position: absolute;
-  top: 49%;
-  left: 50%;
+  top: 40%;
+  right: -48%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  transition: all 1.5s ease;
+  box-shadow: 8px 8px 20px -1px rgba(0, 0, 0, 0.41);
 }
 .container .sidebar .cvc-back {
-  margin-right: 48px;
+  margin-right: 52px;
   padding-bottom: 4px;
   color: white;
+  font-size: 1.3em;
+  letter-spacing: 2px;
 }
 .container .main {
   display: flex;
@@ -85,10 +96,11 @@
   display: flex;
   flex-direction: column;
   min-width: 400px;
+  width: 28em;
 }
 .container .main form label {
   margin-block: 0.5em;
-  font-size: 12px;
+  font-size: 1em;
   font-family: "Space Grotesk", sans-serif;
 }
 .container .main form input {
@@ -97,6 +109,7 @@
   border-radius: 5px;
   padding: 0.5rem;
   font-family: "Quicksand", sans-serif;
+  font-size: 1em;
 }
 .container .main form input:focus {
   outline: none;
@@ -110,6 +123,7 @@
   display: flex;
   flex-direction: column;
   border: none;
+  margin-block: 0.5rem;
 }
 .container .main form .card-finer-details {
   display: flex;
@@ -139,7 +153,7 @@
   padding: 10px;
   border: none;
   border-radius: 5px;
-  font-size: 15px;
+  font-size: 1em;
   font-family: "Space Grotesk", sans-serif;
   transition: all 0.5s ease;
   outline: none;
