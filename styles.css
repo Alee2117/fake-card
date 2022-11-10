@@ -28,32 +28,31 @@
   background-size: cover;
   background-position: center;
   border-radius: 7px;
-  width: 34rem;
-  height: 19rem;
+  width: clamp(25em, 30vw, 34em);
+  font-size: 1em;
+  height: clamp(14em, 18vw, 19em);
   position: absolute;
-  right: -30%;
+  left: 36%;
   top: 13%;
   color: white;
-  font-size: 1em;
-  padding: 2em;
+  padding: 1.5em;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   z-index: 1;
-  transition: all 1.5s ease;
   box-shadow: 8px 8px 20px -1px rgba(0, 0, 0, 0.41);
 }
 .container .sidebar .card-front .icon {
   max-width: 70px;
 }
 .container .sidebar .card-front .middle-front {
-  font-size: 2.2em;
+  font-size: clamp(1.5em, 1.9vw, 2.3em);
   letter-spacing: 3px;
 }
 .container .sidebar .card-front .bottom-front {
   display: flex;
   justify-content: space-between;
-  font-size: 1.2em;
+  font-size: clamp(1em, 1vw, 1.2em);
 }
 .container .sidebar .card-front .bottom-front .card-name {
   letter-spacing: 2px;
@@ -67,15 +66,14 @@
   background-size: cover;
   background-position: center;
   border-radius: 7px;
-  width: 34rem;
-  height: 19rem;
+  width: clamp(25em, 30vw, 34em);
+  height: clamp(14em, 18vw, 19em);
   position: absolute;
-  top: 40%;
-  right: -48%;
+  top: 42%;
+  left: 52%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  transition: all 1.5s ease;
   box-shadow: 8px 8px 20px -1px rgba(0, 0, 0, 0.41);
 }
 .container .sidebar .cvc-back {
@@ -97,6 +95,7 @@
   flex-direction: column;
   min-width: 400px;
   width: 28em;
+  margin-left: 10rem;
 }
 .container .main form label {
   margin-block: 0.5em;
@@ -171,7 +170,7 @@
   -moz-appearance: textfield;
 }
 
-@media only screen and (max-width: 1272px) {
+@media only screen and (max-width: 1168px) {
   .container {
     width: 100%;
     min-height: 100vh;
@@ -180,16 +179,17 @@
     grid-template-columns: initial;
   }
   .container .sidebar .card-front {
-    left: 8%;
+    left: 10%;
     top: 7%;
   }
   .container .sidebar .card-back {
     left: initial;
-    right: 8%;
-    top: 27%;
+    right: 10%;
+    top: 16%;
   }
   .container .main form {
     margin-top: 25px;
+    margin-left: 0;
   }
 }
 @media only screen and (max-width: 608px) {
@@ -214,41 +214,5 @@
     left: initial;
     right: 8%;
     top: 65%;
-  }
-}
-@media only screen and (max-width: 425px) {
-  .container {
-    width: 100%;
-    min-height: 100vh;
-    display: grid;
-    grid-template-rows: 1.5fr 3fr;
-    grid-template-columns: initial;
-  }
-  .container .sidebar .card-front {
-    width: min(100%, 18rem);
-    height: 10rem;
-    font-size: 14px;
-    top: 6%;
-    left: 2%;
-  }
-  .container .sidebar .card-front .middle-front {
-    font-size: 20px;
-  }
-  .container .sidebar .card-back {
-    width: min(100%, 18rem);
-    height: 10rem;
-    left: initial;
-    right: 2%;
-    top: 55%;
-  }
-  .container .main form {
-    width: 94%;
-    min-width: -webkit-fit-content;
-    min-width: -moz-fit-content;
-    min-width: fit-content;
-    margin-top: 22px;
-  }
-  .container .main form .card-finer-details .month-date input {
-    max-width: 50px;
   }
 }/*# sourceMappingURL=styles.css.map */
