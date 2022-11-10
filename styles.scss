@@ -246,10 +246,14 @@
       .card-front {
         width: 21rem;
         height: 11rem;
-        font-size: 16px;
+        font-size: .8em;
 
         .middle-front {
-          font-size: 22px;
+          font-size: 1.4em;
+        }
+
+        .icon {
+          max-width: 50px;
         }
       }
 
@@ -258,56 +262,73 @@
         height: 11rem;
         left: initial;
         right: 8%;
-        top: 65%;
+        top: 40%;
+        font-size: .8em;
+      }
+    }
+    .main {
+      form {
+        width: 94%;
+        min-width: fit-content;
+        margin-top: 22px;
+
+        .card-finer-details {
+          .month-date {
+            input {
+              max-width: 50px;
+            }
+          }
+        }
       }
     }
   }
 }
 
-// @media only screen and (max-width: 425px) {
-//   .container {
-//     width: 100%;
-//     min-height: 100vh;
-//     display: grid;
-//     grid-template-rows: 1.5fr 3fr;
-//     grid-template-columns: initial;
+@media only screen and (max-width: 425px) {
+  .container {
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 1.5fr 3fr;
+    grid-template-columns: initial;
 
-//     .sidebar {
-//       .card-front {
-//         width: min(100%, 18rem);
-//         height: 10rem;
-//         font-size: 14px;
-//         top: 6%;
-//         left: 2%;
+    .sidebar {
+      .card-front {
+        width: min(100%, 18rem);
+        height: 10rem;
+        font-size: 12px;
+        top: 6%;
+        left: 2%;
 
-//         .middle-front {
-//           font-size: 20px;
-//         }
-//       }
+        .middle-front {
+          font-size: 14px;
+        }
+      }
 
-//       .card-back {
-//         width: min(100%, 18rem);
-//         height: 10rem;
-//         left: initial;
-//         right: 2%;
-//         top: 55%;
-//       }
-//     }
+      .card-back {
+        width: min(100%, 18rem);
+        height: 10rem;
+        left: initial;
+        right: 2%;
+        top: 55%;
+        font-size: .7em;
+      }
+    }
 
-//     .main {
-//       form {
-//         width: 94%;
-//         min-width: fit-content;
-//         margin-top: 22px;
+    .main {
+      form {
+        max-width: 94%;
+        min-width: fit-content;
+        margin-top: 22px;
 
-//         .card-finer-details {
-//           .month-date {
-//             input {
-//               max-width: 50px;
-//             }
-//           }
-//         }
-//       }
-//     }
-//   }
-// }
+        .card-finer-details {
+          .month-date {
+            input {
+              max-width: 50px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
