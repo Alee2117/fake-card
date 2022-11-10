@@ -294,10 +294,10 @@
 
     .sidebar {
       .card-front {
-        width: min(100%, 18rem);
-        height: 10rem;
+        width: min(17rem);
+        height: 9rem;
         font-size: 12px;
-        top: 6%;
+        top: 40%;
         left: 2%;
 
         .middle-front {
@@ -306,11 +306,11 @@
       }
 
       .card-back {
-        width: min(100%, 18rem);
-        height: 10rem;
+        width: min(17rem);
+        height: 9rem;
         left: initial;
         right: 2%;
-        top: 55%;
+        top: 6%;
         font-size: .7em;
       }
     }
@@ -319,6 +319,18 @@
       form {
         max-width: 91%;
         margin-top: 22px;
+
+        input {
+          font-size: .7em;
+        }
+
+        label {
+          font-size: .7em;
+        }
+
+        button {
+          font-size: .7em;
+        }
 
         .card-finer-details {
           .month-date {
